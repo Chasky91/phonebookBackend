@@ -2,11 +2,12 @@ import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 
-const PUERTO = 3000
+const PUERTO = process.env.PORT || 3000
 const app = express()
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static('dist'))
 
 //creo el token de morgan para el body
 morgan.token('body', req =>  {
