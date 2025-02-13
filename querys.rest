@@ -1,5 +1,9 @@
 DELETE http://localhost:3000/api/persons/1106
 ###
+GET http://localhost:3000/api/persons/1
+
+
+###
 GET http://localhost:3000/api/persons
 
 ###
@@ -10,7 +14,7 @@ POST https://phonebookbackend-xohj.onrender.com/api/persons
 content-type: application/json
 
 {
-    "name": "Germanida Polea", 
+    "name": "Germa Granacho", 
     "number": "39-23-6423122"    
 }
 
@@ -21,7 +25,7 @@ POST http://localhost:3000/api/persons
 content-type: application/json
 
 {
-    "name": "Germanida Polea", 
+    "name": "germanida garnacho", 
     "number": "39-23-6423122"    
 }
 
