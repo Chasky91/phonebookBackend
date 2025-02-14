@@ -4,33 +4,64 @@ GET http://localhost:3000/api/persons/1
 
 
 ###
+GET http://localhost:3000/api/persons/67aab9249b18d1447b655a1b
+
+###
 GET http://localhost:3000/api/persons
 
 ###
 GET https://phonebookbackend-xohj.onrender.com/api/persons
 
 ###
-POST https://phonebookbackend-xohj.onrender.com/api/persons
+POST http://localhost:3000/api/persons
 content-type: application/json
 
 {
-    "name": "Germa Granacho", 
+    "name": "Ge", 
     "number": "39-23-6423122"    
 }
 
 
+###
+POST https://phonebookbackend-xohj.onrender.com/api/persons
+content-type: application/json
+
+{
+    "name": "Gero", 
+    "number": "39-23-6423122"    
+}
 
 ###
 POST http://localhost:3000/api/persons
 content-type: application/json
 
 {
-    "name": "germanida garnacho", 
-    "number": "39-23-6423122"    
+    "name": "germanida onzales", 
+    "number": "39-64231"    
 }
 
 ###
-DELETE http://localhost:3000/api/person/456
+PUT http://localhost:3000/api/persons/67aab9249b18d1447b655a1b
+content-type: application/json
+
+{
+    "name": "Ricosoma luz", 
+    "number": "39-23-6423122"    
+}
+
 
 ###
-GET http://localhost:3000/api/personsonas
+PUT http://localhost:3000/api/persons/67aab9249b18d1447b655a1b
+content-type: application/json
+
+{
+    "name": "Ricaerdo Marronazo", 
+    "number": "39-23-6423122"    
+}
+
+
+###
+DELETE http://localhost:3000/api/persons/67ae1c5d9a62c686e2ac91bdb
+
+###
+GET http://localhost:3000/api/persons

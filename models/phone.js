@@ -16,8 +16,21 @@ mongoose.connect(url)
     })
 
 const phoneSchema = new mongoose.Schema({
-    name: String,
-    number: String
+    name: {
+        type:String,
+        minLength: 3,
+        required: true
+    },
+    number: {
+        type: String,
+        validate: {
+            validator: function(v) {
+                return /^\d{2}-\d{5}$/.test(v)
+            },
+            message: props => `El numero proporcionado no es el adecuado ${props.value}`        
+        },
+        required: [true, "El numero es requerido"]
+    }
 })
 
 phoneSchema.set('toJSON', {
